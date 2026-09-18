@@ -1214,3 +1214,4 @@ xtrans-dev	1.4.0-1
 xz-utils	5.2.5-2ubuntu1.1
 zlib1g:arm64	1:1.2.11.dfsg-2ubuntu9.2
 zlib1g-dev:arm64	1:1.2.11.dfsg-2ubuntu9.2
+slam_toolbox 2.6.10 8293d21fe5c816d0405e0cc1f3eb46c70659c267 + TowerGO grid padding

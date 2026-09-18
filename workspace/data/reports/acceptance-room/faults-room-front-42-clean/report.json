@@ -1,6 +1,6 @@
 {
-  "source_sha256": "6b6081065cc0f40d909b0e063d53ebcc23ab4dff124182639782ea76131dead5",
-  "image_id": "sha256:0d54d484e7d65804e4b5155d38eb14bc4283fbf28717e42692ce9fe8a7f5041c",
+  "source_sha256": "1006c8a9ae667434a7dde66f3f10cbd8ad3761745beefc1d0aec4c1e692be42e",
+  "image_id": "sha256:2c8c00741ed67e64064561090390040830e7ef7a0b31a1dd8505f8156da07e57",
   "mode": "faults",
   "scenario": "room",
   "seed": 42,
@@ -21,7 +21,7 @@
     "rate:=2.0",
     "map:=/data/reports/acceptance-room/mapping-room-front-42-clean/map.yaml"
   ],
-  "localization_converged_seconds": 1.6799999999999997,
+  "localization_converged_seconds": 0.9800000000000004,
   "faults": {
     "cancel": {
       "accepted": true,
@@ -30,7 +30,7 @@
     },
     "sensor_loss": {
       "passed": true,
-      "elapsed_sim_seconds": 2.119999999999999
+      "elapsed_sim_seconds": 2.1399999999999997
     },
     "pause_resume": {
       "passed": true

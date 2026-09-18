@@ -5,6 +5,7 @@ WS=$(cd "$REPO/../.." && pwd)
 IMAGE=towergo-offline:humble
 case "${1:-help}" in
   build)
+    python3 "$REPO/scripts/fetch_vendor.py"
     sudo docker build --build-arg "BASE_IMAGE=${BASE_IMAGE:-ros:humble-ros-base}" -f "$REPO/docker/Dockerfile" -t "$IMAGE" "$REPO"
     mkdir -p "$WS/data/reports"
     sudo docker image inspect "$IMAGE" > "$WS/data/reports/image-inspect.json"

@@ -1,6 +1,6 @@
 {
-  "source_sha256": "6b6081065cc0f40d909b0e063d53ebcc23ab4dff124182639782ea76131dead5",
-  "image_id": "sha256:0d54d484e7d65804e4b5155d38eb14bc4283fbf28717e42692ce9fe8a7f5041c",
+  "source_sha256": "1006c8a9ae667434a7dde66f3f10cbd8ad3761745beefc1d0aec4c1e692be42e",
+  "image_id": "sha256:2c8c00741ed67e64064561090390040830e7ef7a0b31a1dd8505f8156da07e57",
   "mode": "navigation",
   "scenario": "room",
   "seed": 43,
@@ -21,7 +21,7 @@
     "rate:=2.0",
     "map:=/data/reports/acceptance-room/mapping-room-front-42-clean/map.yaml"
   ],
-  "localization_converged_seconds": 1.6399999999999997,
+  "localization_converged_seconds": 0.9599999999999991,
   "goals": [
     {
       "goal": [
@@ -30,8 +30,8 @@
         0.0
       ],
       "status": 4,
-      "position_error_m": 0.13171701699786398,
-      "yaw_error_deg": 3.37459317289463,
+      "position_error_m": 0.08207070909969989,
+      "yaw_error_deg": 3.8442770974418092,
       "passed": true
     },
     {
@@ -41,8 +41,8 @@
         1.5707963267948966
       ],
       "status": 4,
-      "position_error_m": 0.11577990733899746,
-      "yaw_error_deg": 1.0411838878077644,
+      "position_error_m": 0.08149656590889123,
+      "yaw_error_deg": 0.8590505670666351,
       "passed": true
     },
     {
@@ -52,15 +52,15 @@
         3.141592653589793
       ],
       "status": 4,
-      "position_error_m": 0.04129518523434108,
-      "yaw_error_deg": 3.0385500711617253,
+      "position_error_m": 0.08027482194411475,
+      "yaw_error_deg": 3.0662652497370284,
       "passed": true
     }
   ],
-  "trajectory_samples": 333,
-  "tf_misses": 1,
+  "trajectory_samples": 320,
+  "tf_misses": 8,
   "collisions": 0,
-  "position_rmse_m": 0.07330023486452349,
-  "wall_error_p95_m": 0.02500000037252903,
-  "observed_cells": 25600
+  "position_rmse_m": 0.038702247060387794,
+  "wall_error_p95_m": 0.025000121071935055,
+  "observed_cells": 27556
 }

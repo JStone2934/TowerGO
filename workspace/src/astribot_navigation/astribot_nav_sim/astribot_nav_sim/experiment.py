@@ -132,7 +132,11 @@ class Run:
         config=yaml.safe_load(path.with_suffix('.yaml').read_text());image=path.parent/config['image']
         if not image.is_file():raise RuntimeError('Saved map image missing')
         self.report.update(self.node.metrics(self.args.scenario));self.report['map_yaml']=str(path.with_suffix('.yaml'))
-        self.report['passed']=self.report.get('position_rmse_m',999)<=.15 and self.report.get('wall_error_p95_m',999)<=.15 and self.node.collisions==0
+        audit_path=self.output/'map-audit.json'
+        from .map_audit import audit
+        self.report['map_audit']=audit(path.with_suffix('.yaml'),self.args.scenario)
+        audit_path.write_text(json.dumps(self.report['map_audit'],indent=2))
+        self.report['passed']=self.report['map_audit']['passed'] and self.report.get('position_rmse_m',999)<=.15 and self.report.get('wall_error_p95_m',999)<=.15 and self.node.collisions==0
     def localize(self):
         if not self.node.client.wait_for_server(timeout_sec=60.):raise RuntimeError('Nav2 action server unavailable')
         self.node.initialize()

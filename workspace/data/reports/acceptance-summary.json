@@ -8,5 +8,6 @@
   "faults_passed": 1,
   "failed_runs": [],
   "complete": true,
-  "passed": true
+  "passed": true,
+  "map_audit_passed": true
 }

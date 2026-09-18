@@ -12,6 +12,10 @@ goals=[g for r in navigation for g in r.get('goals',[])]
 summary={'mapping_runs':len(mapping),'mapping_passed':sum(r['passed'] for r in mapping),'navigation_runs':len(navigation),'goals':len(goals),'goals_passed':sum(g['passed'] for g in goals),'fault_runs':len(faults),'faults_passed':sum(r['passed'] for r in faults),'failed_runs':[r['path'] for r in reports if not r['passed']]}
 summary['complete']=len(mapping)==12 and len(navigation)==9 and len(goals)==27 and len(faults)==1
 summary['passed']=summary['complete'] and not summary['failed_runs']
+if (root/'map-coverage-audit.json').exists():
+ audit_rows=json.loads((root/'map-coverage-audit.json').read_text())
+ summary['map_audit_passed']=len(audit_rows)==12 and all(x.get('passed',False) for x in audit_rows)
+ summary['passed']=summary['passed'] and summary['map_audit_passed']
 (root/'acceptance-summary.json').write_text(json.dumps(summary,indent=2))
 lines=['# TowerGO 实现与验证状态','',f"完整矩阵：{'通过' if summary['passed'] else '未全部通过或尚未完成'}",'',
  f"- 建图：{summary['mapping_passed']}/{len(mapping)} 个实验通过（预期12）。",
@@ -29,6 +33,8 @@ unit=root/'unit-container.log'
 if unit.exists():lines+=['','## 单元与集成测试','',unit.read_text().strip()]
 replay=root/'replay-check/report.json'
 if replay.exists():lines+=['',f"录包暂停、恢复、完整重启验证：{'通过' if json.loads(replay.read_text())['passed'] else '失败'}。"]
+api=root/'public-api-check/report.json'
+if api.exists():lines+=['',f"公共导航 CLI 验证：{'通过' if json.loads(api.read_text())['passed'] else '失败'}。"]
 lines+=['','SDK 状态历史录包：8759 条消息解析完成，坐标语义未确认，未发布 TF。','',
 '详细结果见 acceptance-summary.json、各实验 report.json、map-coverage-audit.json 和 launch.log。早期调试失败记录保留，不计入最终验收矩阵。','',
 '全部运行均为隔离容器中的合成实验，不导入 SDK，不控制真实机器人。模拟精度不能代表实机精度。']

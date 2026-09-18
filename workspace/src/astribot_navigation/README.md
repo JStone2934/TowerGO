@@ -53,7 +53,7 @@ bash scripts/container.sh run python3 /towergo/src/astribot_navigation/scripts/r
 
 ```bash
 ros2 launch astribot_nav_bringup offline_mapping.launch.py scenario:=room scan_source:=dual
-ros2 launch astribot_nav_bringup offline_navigation.launch.py map:=/data/maps/office/map.yaml
+ros2 launch astribot_nav_bringup offline_navigation.launch.py map:=/data/maps/room/map.yaml
 ros2 run astribot_nav_api navigate 3.0 0.0 0.0
 ```
 
@@ -85,8 +85,12 @@ ros2 launch astribot_nav_bringup replay_mapping.launch.py bag:=/data/bags/room-i
 ## 报告与验收
 
 每个实验目录包含 `report.json`、`launch.log`、`truth.csv`、`estimated.csv`、依赖版本；建图实验另存地图、位姿图，可选原始合成录包。`summary.json` 汇总全套结果。
-轨迹评分使用同一时间戳的 TF 与真值，只使用固定初始坐标，不做结束后拟合。地图评分仅对已观测占据栅格计算到真实墙段的距离，不把未观测区域算作建图成功。
+轨迹评分使用同一时间戳的 TF 与真值，只使用固定初始坐标，不做结束后拟合。地图评分同时计算占据栅格到真实墙段的误差、真实墙面覆盖率与错误清空区域，地图范围外的墙面也计入覆盖率检查。详见 `map-audit.json`。
 
 ## 真机接入前仍需验证
 
 底盘反馈的轴/单位/参考系、实际底盘控制模式、控制权获取与释放、指令超时停车、雷达外参是否已应用、时间同步以及实测轮廓。默认禁止硬件后端，不能用 SDK 强制控制权绕过这些检查。
+
+本次交付地图保存在主机 `data/maps/{room,corridor,obstacles}/`；完整验收状态见 `data/reports/IMPLEMENTATION_STATUS.md`。容器中路径分别为 `/data/maps/...` 和 `/data/reports/...`。
+
+Humble SLAM Toolbox 使用固定上游提交加栅格边界修复，见 `docs/experiments.md`。构建记录上游提交、源归档 SHA256、依赖版本和镜像 ID。

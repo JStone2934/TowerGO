@@ -1,6 +1,8 @@
 [
   {
-    "true_wall_samples": 1040,
+    "passed": true,
+    "wall_samples_outside_grid": 0,
+    "true_wall_samples": 1286,
     "true_wall_coverage_within_15cm": 1.0,
     "wall_to_map_p95_m": 0.03535533905932756,
     "wall_samples_in_free_space_without_nearby_obstacle": 0,
@@ -10,9 +12,11 @@
     "scenario": "corridor"
   },
   {
+    "passed": true,
+    "wall_samples_outside_grid": 0,
     "true_wall_samples": 1286,
     "true_wall_coverage_within_15cm": 1.0,
-    "wall_to_map_p95_m": 0.0403112887414931,
+    "wall_to_map_p95_m": 0.04527692569068742,
     "wall_samples_in_free_space_without_nearby_obstacle": 0,
     "unexplained_free_fraction": 0.0,
     "run": "mapping-corridor-dual-42-noise",
@@ -20,7 +24,9 @@
     "scenario": "corridor"
   },
   {
-    "true_wall_samples": 1040,
+    "passed": true,
+    "wall_samples_outside_grid": 0,
+    "true_wall_samples": 1286,
     "true_wall_coverage_within_15cm": 1.0,
     "wall_to_map_p95_m": 0.03535533905932756,
     "wall_samples_in_free_space_without_nearby_obstacle": 0,
@@ -30,9 +36,11 @@
     "scenario": "corridor"
   },
   {
+    "passed": true,
+    "wall_samples_outside_grid": 0,
     "true_wall_samples": 1286,
     "true_wall_coverage_within_15cm": 1.0,
-    "wall_to_map_p95_m": 0.03807886552932045,
+    "wall_to_map_p95_m": 0.03807886552931972,
     "wall_samples_in_free_space_without_nearby_obstacle": 0,
     "unexplained_free_fraction": 0.0,
     "run": "mapping-corridor-front-42-noise",
@@ -40,9 +48,11 @@
     "scenario": "corridor"
   },
   {
+    "passed": true,
+    "wall_samples_outside_grid": 0,
     "true_wall_samples": 1448,
     "true_wall_coverage_within_15cm": 1.0,
-    "wall_to_map_p95_m": 0.025000000000000445,
+    "wall_to_map_p95_m": 0.03535533905932756,
     "wall_samples_in_free_space_without_nearby_obstacle": 0,
     "unexplained_free_fraction": 0.0,
     "run": "mapping-obstacles-dual-42-clean",
@@ -50,17 +60,21 @@
     "scenario": "obstacles"
   },
   {
+    "passed": true,
+    "wall_samples_outside_grid": 0,
     "true_wall_samples": 1448,
-    "true_wall_coverage_within_15cm": 0.8646408839779005,
-    "wall_to_map_p95_m": 1.364832432463214,
-    "wall_samples_in_free_space_without_nearby_obstacle": 196,
-    "unexplained_free_fraction": 0.13535911602209943,
+    "true_wall_coverage_within_15cm": 1.0,
+    "wall_to_map_p95_m": 0.0353553390593273,
+    "wall_samples_in_free_space_without_nearby_obstacle": 0,
+    "unexplained_free_fraction": 0.0,
     "run": "mapping-obstacles-dual-42-noise",
     "scan_source": "dual",
     "scenario": "obstacles"
   },
   {
-    "true_wall_samples": 804,
+    "passed": true,
+    "wall_samples_outside_grid": 0,
+    "true_wall_samples": 1448,
     "true_wall_coverage_within_15cm": 1.0,
     "wall_to_map_p95_m": 0.03535533905932756,
     "wall_samples_in_free_space_without_nearby_obstacle": 0,
@@ -70,9 +84,11 @@
     "scenario": "obstacles"
   },
   {
+    "passed": true,
+    "wall_samples_outside_grid": 0,
     "true_wall_samples": 1448,
     "true_wall_coverage_within_15cm": 1.0,
-    "wall_to_map_p95_m": 0.047434164902527345,
+    "wall_to_map_p95_m": 0.047434164902526506,
     "wall_samples_in_free_space_without_nearby_obstacle": 0,
     "unexplained_free_fraction": 0.0,
     "run": "mapping-obstacles-front-42-noise",
@@ -80,9 +96,11 @@
     "scenario": "obstacles"
   },
   {
-    "true_wall_samples": 640,
+    "passed": true,
+    "wall_samples_outside_grid": 0,
+    "true_wall_samples": 1284,
     "true_wall_coverage_within_15cm": 1.0,
-    "wall_to_map_p95_m": 0.03535533905932725,
+    "wall_to_map_p95_m": 0.03535533905932756,
     "wall_samples_in_free_space_without_nearby_obstacle": 0,
     "unexplained_free_fraction": 0.0,
     "run": "mapping-room-dual-42-clean",
@@ -90,9 +108,11 @@
     "scenario": "room"
   },
   {
+    "passed": true,
+    "wall_samples_outside_grid": 0,
     "true_wall_samples": 1284,
     "true_wall_coverage_within_15cm": 1.0,
-    "wall_to_map_p95_m": 0.040311288741493125,
+    "wall_to_map_p95_m": 0.02915475947422691,
     "wall_samples_in_free_space_without_nearby_obstacle": 0,
     "unexplained_free_fraction": 0.0,
     "run": "mapping-room-dual-42-noise",
@@ -100,9 +120,11 @@
     "scenario": "room"
   },
   {
-    "true_wall_samples": 640,
+    "passed": true,
+    "wall_samples_outside_grid": 0,
+    "true_wall_samples": 1284,
     "true_wall_coverage_within_15cm": 1.0,
-    "wall_to_map_p95_m": 0.03535533905932725,
+    "wall_to_map_p95_m": 0.03535533905932756,
     "wall_samples_in_free_space_without_nearby_obstacle": 0,
     "unexplained_free_fraction": 0.0,
     "run": "mapping-room-front-42-clean",
@@ -110,9 +132,11 @@
     "scenario": "room"
   },
   {
+    "passed": true,
+    "wall_samples_outside_grid": 0,
     "true_wall_samples": 1284,
     "true_wall_coverage_within_15cm": 1.0,
-    "wall_to_map_p95_m": 0.04743416490252721,
+    "wall_to_map_p95_m": 0.05147815070493567,
     "wall_samples_in_free_space_without_nearby_obstacle": 0,
     "unexplained_free_fraction": 0.0,
     "run": "mapping-room-front-42-noise",
