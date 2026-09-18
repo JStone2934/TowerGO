@@ -14,3 +14,6 @@
 /workspace/data/reports/**/*.data
 /workspace/data/reports/**/*.pgm
 /workspace/data/reports/**/*.log
+
+# Downloaded dependency cache
+/workspace/data/cache/
