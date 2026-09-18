@@ -1,0 +1,122 @@
+[
+  {
+    "true_wall_samples": 1040,
+    "true_wall_coverage_within_15cm": 1.0,
+    "wall_to_map_p95_m": 0.03535533905932756,
+    "wall_samples_in_free_space_without_nearby_obstacle": 0,
+    "unexplained_free_fraction": 0.0,
+    "run": "mapping-corridor-dual-42-clean",
+    "scan_source": "dual",
+    "scenario": "corridor"
+  },
+  {
+    "true_wall_samples": 1286,
+    "true_wall_coverage_within_15cm": 1.0,
+    "wall_to_map_p95_m": 0.0403112887414931,
+    "wall_samples_in_free_space_without_nearby_obstacle": 0,
+    "unexplained_free_fraction": 0.0,
+    "run": "mapping-corridor-dual-42-noise",
+    "scan_source": "dual",
+    "scenario": "corridor"
+  },
+  {
+    "true_wall_samples": 1040,
+    "true_wall_coverage_within_15cm": 1.0,
+    "wall_to_map_p95_m": 0.03535533905932756,
+    "wall_samples_in_free_space_without_nearby_obstacle": 0,
+    "unexplained_free_fraction": 0.0,
+    "run": "mapping-corridor-front-42-clean",
+    "scan_source": "front",
+    "scenario": "corridor"
+  },
+  {
+    "true_wall_samples": 1286,
+    "true_wall_coverage_within_15cm": 1.0,
+    "wall_to_map_p95_m": 0.03807886552932045,
+    "wall_samples_in_free_space_without_nearby_obstacle": 0,
+    "unexplained_free_fraction": 0.0,
+    "run": "mapping-corridor-front-42-noise",
+    "scan_source": "front",
+    "scenario": "corridor"
+  },
+  {
+    "true_wall_samples": 1448,
+    "true_wall_coverage_within_15cm": 1.0,
+    "wall_to_map_p95_m": 0.025000000000000445,
+    "wall_samples_in_free_space_without_nearby_obstacle": 0,
+    "unexplained_free_fraction": 0.0,
+    "run": "mapping-obstacles-dual-42-clean",
+    "scan_source": "dual",
+    "scenario": "obstacles"
+  },
+  {
+    "true_wall_samples": 1448,
+    "true_wall_coverage_within_15cm": 0.8646408839779005,
+    "wall_to_map_p95_m": 1.364832432463214,
+    "wall_samples_in_free_space_without_nearby_obstacle": 196,
+    "unexplained_free_fraction": 0.13535911602209943,
+    "run": "mapping-obstacles-dual-42-noise",
+    "scan_source": "dual",
+    "scenario": "obstacles"
+  },
+  {
+    "true_wall_samples": 804,
+    "true_wall_coverage_within_15cm": 1.0,
+    "wall_to_map_p95_m": 0.03535533905932756,
+    "wall_samples_in_free_space_without_nearby_obstacle": 0,
+    "unexplained_free_fraction": 0.0,
+    "run": "mapping-obstacles-front-42-clean",
+    "scan_source": "front",
+    "scenario": "obstacles"
+  },
+  {
+    "true_wall_samples": 1448,
+    "true_wall_coverage_within_15cm": 1.0,
+    "wall_to_map_p95_m": 0.047434164902527345,
+    "wall_samples_in_free_space_without_nearby_obstacle": 0,
+    "unexplained_free_fraction": 0.0,
+    "run": "mapping-obstacles-front-42-noise",
+    "scan_source": "front",
+    "scenario": "obstacles"
+  },
+  {
+    "true_wall_samples": 640,
+    "true_wall_coverage_within_15cm": 1.0,
+    "wall_to_map_p95_m": 0.03535533905932725,
+    "wall_samples_in_free_space_without_nearby_obstacle": 0,
+    "unexplained_free_fraction": 0.0,
+    "run": "mapping-room-dual-42-clean",
+    "scan_source": "dual",
+    "scenario": "room"
+  },
+  {
+    "true_wall_samples": 1284,
+    "true_wall_coverage_within_15cm": 1.0,
+    "wall_to_map_p95_m": 0.040311288741493125,
+    "wall_samples_in_free_space_without_nearby_obstacle": 0,
+    "unexplained_free_fraction": 0.0,
+    "run": "mapping-room-dual-42-noise",
+    "scan_source": "dual",
+    "scenario": "room"
+  },
+  {
+    "true_wall_samples": 640,
+    "true_wall_coverage_within_15cm": 1.0,
+    "wall_to_map_p95_m": 0.03535533905932725,
+    "wall_samples_in_free_space_without_nearby_obstacle": 0,
+    "unexplained_free_fraction": 0.0,
+    "run": "mapping-room-front-42-clean",
+    "scan_source": "front",
+    "scenario": "room"
+  },
+  {
+    "true_wall_samples": 1284,
+    "true_wall_coverage_within_15cm": 1.0,
+    "wall_to_map_p95_m": 0.04743416490252721,
+    "wall_samples_in_free_space_without_nearby_obstacle": 0,
+    "unexplained_free_fraction": 0.0,
+    "run": "mapping-room-front-42-noise",
+    "scan_source": "front",
+    "scenario": "room"
+  }
+]

@@ -1,0 +1,79 @@
+[
+    {
+        "Id": "sha256:bdfa52b295898023416fd94c04aa3def5a3e03aac54ef0b93446943668a9a894",
+        "RepoTags": [
+            "towergo-offline:humble"
+        ],
+        "RepoDigests": [],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-09-18T20:55:28.527477525+08:00",
+        "DockerVersion": "",
+        "Author": "",
+        "Architecture": "arm64",
+        "Os": "linux",
+        "Size": 2462498635,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/re4ssws17i6el9tx4gxee49vc/diff:/var/lib/docker/overlay2/mzibw9up1edn8diahdjp73wdu/diff:/var/lib/docker/overlay2/mniqwnzmbwdi5nyad43x43jsg/diff:/var/lib/docker/overlay2/wa41d0olg8u8eep0m4a2dnaqk/diff:/var/lib/docker/overlay2/kx08fky34onvh90qjewomhgbr/diff:/var/lib/docker/overlay2/8a625ae260fc96ff3068e1225ddd3f51e00792578f87ccb7b53b57d178b8c813/diff:/var/lib/docker/overlay2/7211b8f52ea48fc7a827e7b907832ba9379be029c8189a4aff9f168734e21e8d/diff:/var/lib/docker/overlay2/f55d21b8929e2155a658a5bd444967aa2076edcd17185b56412bc3576618f6c9/diff:/var/lib/docker/overlay2/129b6e4090bb60a33874422ef42091692a6209e75305b1eda559ad4b7f59b3db/diff:/var/lib/docker/overlay2/e9873c7da2b8e0172e3cf7aed4811ec7139ea81f21566c1b5bbcb25c28784eb3/diff:/var/lib/docker/overlay2/91c8cce700c85027ac6b6c3706632436ae95eb78852fb473b234d15425aa217f/diff:/var/lib/docker/overlay2/f68ec8731fed92515ffbca2674d2c8f9832f5a3c6dc4b7f2a2b11a3685e3f5c2/diff:/var/lib/docker/overlay2/2f68123a01d4839938363af8896179d43108f251701654b370384156c5f0a9b6/diff:/var/lib/docker/overlay2/de7567a030195f4f4da2ee635c672ab45febe6e97a90b8e645a0d1076d4ebfaf/diff:/var/lib/docker/overlay2/715a9db406e11cd746648555f09c90f698ddbb9d6323f617a8d55f487ded8f20/diff",
+                "MergedDir": "/var/lib/docker/overlay2/rmw1nx81mgcaqskgl70eygqvj/merged",
+                "UpperDir": "/var/lib/docker/overlay2/rmw1nx81mgcaqskgl70eygqvj/diff",
+                "WorkDir": "/var/lib/docker/overlay2/rmw1nx81mgcaqskgl70eygqvj/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:9a355ff6975d1085f6e6db84acabe804ee5500cdbb5118523220e2ff35d2e2ea",
+                "sha256:ff6cd9b24b932158fe35c87cb700be0efeb7830be69988da0899767c59e4daeb",
+                "sha256:8f4da6ba8f59e871d2674d2f2e61d41cca46dc7f0f64a05b862acbbd210c681b",
+                "sha256:9b28a1aa114851c0758e21a7412af97dded626888a640cbfb88a9b8fe14d67a7",
+                "sha256:2650859df14b74a08d42eabcb44b679a1cc0fe64b4a86663c1a8db79878293ec",
+                "sha256:2b5e92ad684e930dcd1b5bdef93c338e46b9bff3e448d81ecab12fe815181a6d",
+                "sha256:8b15e4a53dee132521b7aabfce9ad5b3a8421d974c8e3ee0202c349fe6a96dac",
+                "sha256:db2557260131a3d2da551c0f593b2384017c6d668f89a53e0475bb2cee2b7e4c",
+                "sha256:82ad8ec90c9fbd0868507a81a66ec885cf4f4a33885d947d2d333bddef0ed8d4",
+                "sha256:35a0a4ea20593d323c09008f1a3939d6f6258df324bbdd81d0e90f5d9f3893cb",
+                "sha256:342789dfcc965cc8194f6aa999ef6c3cf999b0589bc96d4d28d06fcdbd8a450a",
+                "sha256:3bec3e3b3f8347215c7983b6d3527fd09868d2fa80d7f0fed8d019fb823a0548",
+                "sha256:fe1c5b17cca1106e7391ff411d7f4f31c4411ddf643153188c73b50d9ca0c237",
+                "sha256:32267a705f8da15b9ec24d1073eacd1f748103a316686552f3cb5bd345e49fca",
+                "sha256:a2ee909190141ea424044d104238026ca82d12e7bd57935dc55ba70584318016",
+                "sha256:3057f84ee9520d24edeee73bae56eebf9470e1bef768b753c87a097ce74e844b"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-09-18T20:55:28.721300223+08:00"
+        },
+        "Config": {
+            "ArgsEscaped": true,
+            "Cmd": [
+                "bash"
+            ],
+            "Entrypoint": [
+                "/towergo-entrypoint.sh"
+            ],
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "LC_ALL=C.UTF-8",
+                "ROS_DISTRO=humble",
+                "DEBIAN_FRONTEND=noninteractive",
+                "ROS_DOMAIN_ID=125",
+                "ROS_LOCALHOST_ONLY=1"
+            ],
+            "Labels": {
+                "org.opencontainers.image.version": "22.04"
+            },
+            "OnBuild": null,
+            "Shell": [
+                "/bin/bash",
+                "-c"
+            ],
+            "User": "",
+            "Volumes": null,
+            "WorkingDir": "/towergo"
+        }
+    }
+]

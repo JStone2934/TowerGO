@@ -1,0 +1,16 @@
+# OS metadata
+.DS_Store
+._*
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Generated ROS recordings, maps and logs in experiment reports
+/workspace/data/reports/**/*.mcap
+/workspace/data/reports/**/*.db3
+/workspace/data/reports/**/*.posegraph
+/workspace/data/reports/**/*.data
+/workspace/data/reports/**/*.pgm
+/workspace/data/reports/**/*.log

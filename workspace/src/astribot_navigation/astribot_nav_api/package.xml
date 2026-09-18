@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<package format="3">
+<name>astribot_nav_api</name><version>0.1.0</version><description>TowerGO offline SLAM and navigation experiments.</description>
+<maintainer email="maintainer@example.invalid">TowerGO (replace before release)</maintainer><license>Proprietary</license>
+<buildtool_depend>ament_python</buildtool_depend>
+<depend>rclpy</depend>
+<depend>geometry_msgs</depend>
+<depend>nav2_msgs</depend>
+<depend>action_msgs</depend>
+<export><build_type>ament_python</build_type></export></package>
